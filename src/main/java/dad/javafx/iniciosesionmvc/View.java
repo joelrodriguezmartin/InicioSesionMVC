@@ -46,9 +46,11 @@ public class View extends GridPane {
 		this.addRow(1, passwordLabel, passwordText);
 		this.addRow(2, buttons);
 		
-		GridPane.setRowSpan(buttons, 2);
+		GridPane.setColumnSpan(buttons, 2);
 		GridPane.setFillWidth(userText, true);
+		
 		GridPane.setFillWidth(passwordText, true);
+		
 	}
 	public TextField getUserText() {
 		return userText;

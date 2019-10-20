@@ -12,7 +12,7 @@ public class App extends Application {
 		
 		controller = new Controller();
 		
-		Scene scene = new Scene(controller.getRoot(), 320, 200);
+		Scene scene = new Scene(controller.getRoot(), 320, 320);
 		
 		primaryStage.setTitle("Iniciar sesión");
 		primaryStage.setScene(scene);

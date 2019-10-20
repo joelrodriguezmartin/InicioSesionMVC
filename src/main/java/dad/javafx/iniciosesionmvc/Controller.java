@@ -34,7 +34,7 @@ public class Controller {
 			Alert sad = new Alert(AlertType.ERROR);
 			sad.setTitle("Iniciar sesion");
 			sad.setHeaderText("Acceso denegado");
-			sad.setContentText("Datos incorrectos");
+			sad.setContentText("El usuario y/o contraseña no son validos");
 			
 			sad.showAndWait();
 			model.setUser("");
@@ -45,8 +45,8 @@ public class Controller {
 		private void encontrado(String usuario) {
 			Alert fine = new Alert(AlertType.INFORMATION);
 			fine.setTitle("Iniciar sesion");
-			fine.setHeaderText("Sesion iniciada");
-			fine.setContentText("Datos correctos");
+			fine.setHeaderText("Acceso permitido");
+			fine.setContentText("Las credenciales de acceso son validas");
 			
 			fine.showAndWait();
 			Platform.exit();
